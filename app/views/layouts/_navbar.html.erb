@@ -1,4 +1,4 @@
-<div class="bg-gray-100 h-16 text-gray-800 flex justify-around items-center shadow-xl sticky top-0">
+<div class="bg-gray-200 h-16 text-gray-800 flex justify-around items-center shadow-xl sticky top-0">
   <div class="flex justify-center items-center space-x-7">
     <%= link_to root_path, class: "text-2xl hover:border-b-2 hover:rounded hover:border-gray-700 transition delay-15" do %>
       <i class="fa-solid fa-house text-blue-700"></i> WEC Schools
@@ -11,6 +11,11 @@
     <%= link_to "https://wipahs.co.tz/", class: "hover:border-b-2 hover:rounded hover:border-gray-700 transition delay-15", target: "_blank" do %>
       <i class="fa-solid fa-earth-africa"></i> WIPAHS
     <% end %>
-    <div class="px-2 py-1 text-gray-50 bg-green-600 rounded hover:bg-green-800 transition delay-15"><i class="fa-solid fa-arrow-right-to-bracket"></i> Log in</div>
+    <%= link_to new_user_path, class: "px-2 py-1 text-gray-50 bg-blue-600 rounded hover:bg-blue-800 transition delay-15" do %>
+      <i class="fa-solid fa-user-plus"></i> New User
+    <% end %>
+    <%= link_to login_path, class: "px-2 py-1 text-gray-50 bg-green-600 rounded hover:bg-green-800 transition delay-15" do %>
+      <i class="fa-solid fa-arrow-right-to-bracket"></i> Log in
+    <% end %>
   </div>
 </div>
